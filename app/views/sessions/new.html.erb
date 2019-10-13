@@ -6,27 +6,27 @@
 <div class="ui placeholder segment">
   <div class="ui stackable very relaxed two column grid">
     <div class="column">
-      <form class="ui form">
+      <%= form_for(:session, html: {class: "ui form", role: "form"}, url: login_path) do |f| %>
         <div class="field">
-          <label>Username</label>
+          <%= f.label :username, "Username" %>
           <div class="input-group mb-3">
             <div class="input-group-append">
               <div class="btn btn-outline-secondary user-icon"></div>
             </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <%= f.text_field :username, placeholder: "Username", class: "form-control" %>
           </div>
         </div>
         <div class="field">
-          <label>Password</label>
+          <%= f.label :password, "Password"%>
           <div class="input-group mb-3">
             <div class="input-group-append">
               <div class="btn btn-outline-secondary password-icon"></div>
             </div>
-            <input type="text" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <%= f.password_field :password, placeholder: "Password", class: "form-control "%>
           </div>
         </div>
-        <button class="ui primary button">Login</button>
-      </form>
+        <%= f.button "Login", class: "ui primary button" %>
+      <% end %>
     </div>
     <div class="middle aligned column">
       <button class="ui big button">

@@ -7,16 +7,7 @@
       <div class="card chatbox">
         <div class="card-body">
           <div class="ui small feed">
-          <% @message.each do |message| %>
-            <div class="event">
-              <div class="content">
-                <div class="summary">
-                  <em><%= message.user.username %></em>:
-                  <%= message.body %>
-                </div>
-              </div>
-            </div>
-          <% end %>
+            <%= render @messages%>
           </div>
         </div>
         <div class="chatbox-divider"></div>
