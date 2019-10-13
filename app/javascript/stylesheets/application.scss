@@ -47,3 +47,134 @@
 .right-divider {
   margin-right: 15px;
 }
+
+.chatroom-icon {
+  background-image: url('https://i.imgur.com/gEaF1rO.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 4px solid #E9E9EA;
+  border-radius: 50%;
+  height: 95px;
+  width: 95px;
+  margin: 30px auto;
+}
+
+.users-menu {
+  position: relative;
+  top: 0%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #eee;
+  text-align: left;
+  list-style: none;
+  background-color: #1f1d20;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+
+  .dropdown-item-text,
+  a {
+    color: #eee;
+  }
+}
+
+.ui.small.feed {
+  font-size: .92857143rem;
+}
+
+.ui.feed>.event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  padding: .21428571rem 0;
+  margin: 0;
+  background: 0 0;
+  border-top: none;
+}
+
+.ui.feed>.event>.content {
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.ui.feed>.event>.content .summary {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 700;
+  color: rgba(0,0,0,.87);
+}
+
+.ui.feed>.event>.content a {
+  cursor: pointer;
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.card {
+  position: absolute;
+  min-width: 95%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.125);
+}
+
+.chatbox {
+  height: 450px;
+}
+
+.btn-icon {
+  background-image: url('https://i.imgur.com/ozOVLwB.png');
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  background-position: center;
+}
+
+.input-group > .input-group-append > .btn {
+  width: 50px;
+}
+
+.input-field {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.btn-outline-secondary {
+  color: #E57534;
+  border-color: #E57534;
+  background-color: #E57534;
+  cursor: pointer;
+  &:hover {
+    background-color: #E57534;
+    border-color: #E57534;
+    opacity: .9;
+  }
+}
+
+.chatbox-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #e9ecef;
+  position: relative;
+  bottom: 11.3%;
+}
+
+.mb-3, .my-3 {
+  margin-bottom: .6rem !important;
+}
