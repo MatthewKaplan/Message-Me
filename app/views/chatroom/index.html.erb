@@ -5,13 +5,13 @@
 <div class="row">
     <div class="col-10">
       <div class="card chatbox">
-        <div class="card-body">
-          <div class="ui small feed">
+        <div class="card-body" id="messages">
+          <div class="ui small feed" id="message-container">
             <%= render @messages%>
           </div>
         </div>
         <div class="chatbox-divider"></div>
-         <%= form_for(@message, html: {role: "form"}, url: message_path) do |f| %>
+         <%= form_for(@message, html: {role: "form"}, url: message_path, remote: true) do |f| %>
           <div class="card-body input-field">
             <div class="input-group mb-3">
               <%= f.text_field :body, placeholder: "Enter a message...", class: "form-control" %>
