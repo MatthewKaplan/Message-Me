@@ -1,0 +1,49 @@
+@import "~bootstrap/scss/bootstrap";
+
+.bg-light {
+  background-color: #1f1d20 !important;
+  border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #eee;
+  &:hover {
+    color: #eee;
+    opacity: .9;
+    background-color: #484648;
+  }
+}
+
+.chatroom-tab {
+  margin-left: 60px;
+}
+
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #eee;
+}
+
+.btn-outline-success {
+  border-color: #4795d2;
+  color: #eee;
+  background-color: #4795d2;
+  margin-right: 60px;
+
+  &:hover {
+    background-color: #4795d2;
+    opacity: .9;
+    border-color: #4795d2;
+  }
+}
+
+.dropdown-menu {
+  margin: 0.435rem 0 0;
+}
+
+.divider {
+  height: 40px;
+  border-right: 1px solid #333234;
+}
+
+.right-divider {
+  margin-right: 15px;
+}
